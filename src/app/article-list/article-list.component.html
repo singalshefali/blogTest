@@ -1,5 +1,21 @@
 
 
 <div class="container">
-    <p>article-list works!</p>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card" *ngFor="let article of articles">
+                <div class="card-body">
+                    <div class="media">
+                        <img src="{{article.imageUrl}}" class="mr-3">
+                        <div class="media-body">
+                          <h2 class="mt-0">{{article.title}}</h2>
+                          <div class="date">{{article.date.toDateString()}}</div>
+                          <div class="desc">{{article.description}}</div>
+                          <div class="continueReading"><a routerLink="/{{article.key}}">Continue reading</a></div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+        </div>
+    </div>
 </div>

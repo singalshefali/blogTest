@@ -1,0 +1,22 @@
+.card {
+    margin-top: 20px;
+}
+
+.card h2 {
+    margin-bottom: 0;
+}
+
+.card .date {
+    color: grey;
+    font-size: 14px;
+}
+
+.card .desc {
+    margin: 15px 0;
+}
+
+.card .continueReading a {
+    color: grey;
+    text-decoration: underline;
+    font-style: italic;
+}
